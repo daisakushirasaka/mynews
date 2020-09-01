@@ -3,6 +3,7 @@
 {{-- profile.blade.phpの@yield('title')に'プロフィール'を埋め込む --}}
 @section('title', 'プロフィール')
 
+
 {{-- profile.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
     <div class="container">
