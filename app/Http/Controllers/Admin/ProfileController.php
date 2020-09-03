@@ -12,7 +12,6 @@ class ProfileController extends Controller
     }
     public function create(Request $request)
     {
-        // 以下を追記
         // Varidationを行う
         $this->validate($request, Profile::$rules);
         $profile = new Profile;
@@ -26,8 +25,8 @@ class ProfileController extends Controller
         $profile->save();
         return redirect('admin/profile/create');
     }
-
-
+    
+    
     public function edit(Request $request)
   {
       // Profile Modelからデータを取得する

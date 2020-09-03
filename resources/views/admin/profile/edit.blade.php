@@ -1,6 +1,5 @@
 @extends('layouts.profile')
 @section('title', 'プロフィールの編集')
-
 @section('content')
     <div class="container">
         <div class="row">
@@ -14,35 +13,33 @@
                             @endforeach
                         </ul>
                     @endif
-                    
                     <div class="form-group row">
                         <label class="col-md-2" for="title">氏名(name)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ $profile_form->title }}">
+                            <input type="text" class="form-control" name="name" value="{{ $profile_form->name }}">
                         </div>
                     </div>
-                    
+
                     <div class="form-group row">
                         <label class="col-md-2" for="title">性別(gender)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value="{{ $profile_form->title }}">
+                            <input type="text" class="form-control" name="gender" value="{{ $profile_form->hobby }}">
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <label class="col-md-2" for="title">趣味(hobby)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="hobby" value="{{ $profile_form->title }}">
+                            <input type="text" class="form-control" name="hobby" value="{{ $profile_form->hobby }}">
                         </div>
                     </div>
                     
                     <div class="form-group row">
                         <label class="col-md-2" for="body">自己紹介欄(introduction)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->body }}</textarea>
+                            <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->introduction }}</textarea>
                         </div>
                     </div>
-
                     <div class="form-group row">
                         <div class="col-md-10">
                             <input type="hidden" name="id" value="{{ $profile_form->id }}">
