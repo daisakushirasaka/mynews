@@ -23,7 +23,7 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="title">性別(gender)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value="{{ $profile_form->hobby }}">
+                            <input type="text" class="form-control" name="gender" value="{{ $profile_form->gender }}">
                         </div>
                     </div>
 
