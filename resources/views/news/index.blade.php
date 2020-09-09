@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>記事一覧</h1>
+        <h1>デプロイ用の練習としてテキストを作成</h1>
         <hr color="#c0c0c0">
         @if (!is_null($headline))
             <div class="row">
