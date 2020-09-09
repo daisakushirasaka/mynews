@@ -7,6 +7,7 @@ use App\History;
 use Carbon\Carbon;
 use Storage;
 
+
 class NewsController extends Controller
 {
   public function add()
